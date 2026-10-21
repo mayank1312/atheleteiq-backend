@@ -1,0 +1,149 @@
+# Environment and secrets
+# Keep .env.example tracked as the safe configuration template.
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python bytecode and local tooling caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.hypothesis/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.tox/
+.nox/
+.dmypy.json
+dmypy.json
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+develop-eggs/
+eggs/
+
+# Package-manager build artifacts
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Local databases and database exports
+# Do not commit local SQLite data, test records, or dumps.
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.dump
+*.sql.gz
+*.bak
+
+# Machine-learning weights, caches, and generated model files
+# Store/download these outside Git or use an artifact/model registry.
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
+*.engine
+*.mlmodel
+*.h5
+*.ckpt
+.cache/
+/models/
+/weights/
+/runs/
+/wandb/
+/mlruns/
+
+# Uploaded footage, generated clips, thumbnails, and local pipeline output
+# These may contain personal or biometric data and can be very large.
+/media/
+/uploads/
+/clips/
+/raw_sessions/
+/self_uploads/
+/thumbnails/
+/artifacts/
+/outputs/
+/reports/
+/tmp/
+/temp/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.jpg
+*.jpeg
+*.png
+*.wav
+*.mp3
+
+# Application and worker logs
+*.log
+logs/
+/celerybeat-schedule
+celerybeat.pid
+*.pid
+
+# Docker and local service overrides
+docker-compose.override.yml
+docker-compose.local.yml
+.docker/
+
+# IDE and editor files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.fleet/
+
+# Operating-system metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+Desktop.ini
+
+# Temporary files and editor swap files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.swn
+*.bak
+*~
+.eslintcache
+
+# Test and local development artifacts
+.pytest_cache/
+.testmondata
+test-results/
+playwright-report/
+*.prof
+*.pyc
